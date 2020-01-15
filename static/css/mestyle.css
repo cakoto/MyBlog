@@ -1,0 +1,98 @@
+
+
+body{
+    background: url("../image/email-pattern.png");
+}
+
+
+/*-------间距------*/
+.m-padded-tb-mini {
+    padding-top: 0.1em !important;
+    padding-bottom: 0.1em !important;
+
+}
+.m-padded-tb-small{
+    padding-top: 0.5em !important;
+    padding-bottom: 0.5em !important;
+}
+.m-padded-tb-large{
+    padding-top: 3em !important;
+    padding-bottom: 3em !important;
+}
+.m-padded-tb-maximum{
+    padding-bottom: 5em !important;
+    padding-top: 5em !important;
+}
+
+/*-----text------*/
+.m-text{
+    font-weight: 300 !important;
+    letter-spacing: 1px !important;
+    line-height: 1.5;
+    opacity: 0.8 !important;
+}
+.m-text-thin{
+    font-weight: 300 !important;
+}
+.m-text-spaced{
+    letter-spacing: 1px !important;
+}
+.m-text-lined{
+    line-height: 1.5;
+}
+.m-opacity{
+    opacity: 0.8 !important;
+}
+
+/*-----margin------*/
+.m-margin-tiny{
+    margin-top: 0.3em !important;
+    margin-bottom: 0.3em !important;
+}
+.m-margin-top{
+    margin-top: 1em !important;
+}
+.m-margin-top-large{
+    margin-top: 2em !important;
+}
+
+
+/*-----display------*/
+.m-inline-block{
+    display: inline-block !important;
+}
+.m-container{
+    max-width: 72em !important;
+    margin: auto !important;
+}
+
+
+/*-------position--------*/
+.m-right-top{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+/*-------color------*/
+.m-black{
+    color: #333 !important;
+}
+
+
+/*-----mobile or PC------*/
+
+.m-mobile-show{
+    display: none !important;
+}
+
+@media screen and (max-width: 768px){/*屏幕像素小于768时隐藏(即对手机隐藏)*/
+    .m-mobile-hide{
+        display: none !important;
+    }
+    .m-mobile-show{
+        display: block !important;
+    }
+}
+
