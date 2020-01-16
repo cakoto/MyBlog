@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
-        <link rel="stylesheet" href="./static/css/mestyle.css">
+        <link rel="stylesheet" href="static/css/mystyle.css">
         <title>详情页</title>
     </head>
     <body>
@@ -58,7 +58,7 @@
 <!--                    </div>-->
 
 
-                    <div class="content">
+                    <div id="content" class="m-padded-lr-responsive m-padded-tb-large m-text" >
                         <h3 class="item">索引的本质</h3>
                         <p>Index(也可被称之为key): 帮助MySQL高效获取数据的<strong>数据结构</strong>。</p>
                         <blockquote>
@@ -79,6 +79,95 @@
                 <!--留言-->
                 <div class="ui bottom attached segment">
 
+                    <!--留言区域列表-->
+
+                    <div class="ui black segment">
+
+
+                        <!--评论区 designed by semantic ui-->
+                        <div class="ui comments">
+                            <h3 class="ui dividing header">Comments</h3>
+                            <div class="comment">
+                                <a class="avatar">
+                                    <img src="./static/image/yuzi.jpg" alt="">
+                                </a>
+                                <div class="content">
+                                    <a class="author">Matt</a>
+                                    <div class="metadata">
+                                        <span class="date">Today at 5:42PM</span>
+                                    </div>
+                                    <div class="text">太赞了！ </div>
+                                    <div class="actions">
+                                        <a class="reply">Reply</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment">
+                                <a class="avatar">
+                                    <img src="./static/image/yuzi.jpg" alt="">
+                                </a>
+                                <div class="content">
+                                    <a class="author">Elliot Fu</a>
+                                    <div class="metadata">
+                                        <span class="date">Yesterday at 12:30AM</span>
+                                    </div>
+                                    <div class="text">
+                                        <p>這對我的研究是非常有用.謝謝!</p>
+                                    </div>
+                                    <div class="actions">
+                                        <a class="reply">Reply</a>
+                                    </div>
+                                </div>
+                                <div class="comments">
+                                    <div class="comment">
+                                        <a class="avatar">
+                                            <img src="./static/image/yuzi.jpg" alt="">
+                                        </a>
+                                        <div class="content">
+                                            <a class="author">Jenny Hess</a>
+                                            <div class="metadata">
+                                                <span class="date">Just now</span>
+                                            </div>
+                                            <div class="text">艾略特你永远是多么正确 :) </div>
+                                            <div class="actions">
+                                                <a class="reply">Reply</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment">
+                                <a class="avatar">
+                                    <img src="./static/image/yuzi.jpg" alt="">
+                                </a>
+                                <div class="content">
+                                    <a class="author">Joe Henderson</a>
+                                    <div class="metadata">
+                                        <span class="date">5 days ago</span>
+                                    </div>
+                                    <div class="text">老兄，这太棒了。非常感谢。 </div>
+                                    <div class="actions">
+                                        <a class="reply">Reply</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <form class="ui reply form">
+                            <div class="field">
+                                <textarea name="content" placeholder="Please enter your comment here...">
+
+                                </textarea>
+                            </div>
+                            <div class="field">
+                                <div class="ui black labeled submit icon button "><i class="icon edit"></i> Add Reply </div>
+                            </div>
+
+                        </form>
+
+                    </div>
                 </div>
             </div>
 
