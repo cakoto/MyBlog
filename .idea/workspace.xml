@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2950d559-bbce-4509-9fbd-912b42ee7efc" name="Default Changelist" comment="增加css&#10;完成blog页面评论区">
-      <change afterPath="$PROJECT_DIR$/Categories.html" afterDir="false" />
+    <list default="true" id="2950d559-bbce-4509-9fbd-912b42ee7efc" name="Default Changelist" comment="增加管理页面的静态布局&#10;增加个人页面的静态布局&#10;增加时间归档的静态布局&#10;增加标签页的静态布局">
+      <change afterPath="$PROJECT_DIR$/ABOUTME.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Archives.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tags.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/blog_manage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Categories.html" beforeDir="false" afterPath="$PROJECT_DIR$/Categories.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/mystyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/mystyle.css" afterDir="false" />
@@ -37,13 +41,14 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/admin" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.PHP" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\github\MyBlog\admin" />
       <recent name="E:\github\MyBlog" />
       <recent name="E:\github\MyBlog\static\image" />
     </key>
@@ -71,7 +76,8 @@
       <option name="presentableId" value="Default" />
       <updated>1579057934370</updated>
       <workItem from="1579057935634" duration="29124000" />
-      <workItem from="1579169352004" duration="6434000" />
+      <workItem from="1579169352004" duration="10322000" />
+      <workItem from="1579261969990" duration="14455000" />
     </task>
     <task id="LOCAL-00001" summary="修改index&#10;添加静态详情页">
       <created>1579106553966</created>
@@ -87,7 +93,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579172347524</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="增加css&#10;完成Categories静态页面">
+      <created>1579176135044</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1579176135044</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,6 +122,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="修改index&#10;添加静态详情页" />
     <MESSAGE value="增加css&#10;完成blog页面评论区" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加css&#10;完成blog页面评论区" />
+    <MESSAGE value="增加css&#10;完成Categories静态页面" />
+    <MESSAGE value="增加管理页面的静态布局&#10;增加个人页面的静态布局&#10;增加时间归档的静态布局&#10;增加标签页的静态布局" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加管理页面的静态布局&#10;增加个人页面的静态布局&#10;增加时间归档的静态布局&#10;增加标签页的静态布局" />
   </component>
 </project>
