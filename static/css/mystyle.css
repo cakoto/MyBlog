@@ -126,3 +126,19 @@ body{
     }
 }
 
+
+
+/*------toc--------*/
+.toc-list {
+    list-style-type: none !important;
+    margin: 0;
+    padding-left: 10px;
+}
+.toc-list li a{
+    display: block;
+    padding: 4px 0;
+    font-weight: 300;
+}
+.toc-list li a:hover{
+    color: #54BC4B;
+}
