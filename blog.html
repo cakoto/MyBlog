@@ -16,9 +16,11 @@
         <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
         <script src="static/lib/prism/prism.js"></script>
         <script src="https://cdn.bootcss.com/tocbot/4.8.1/tocbot.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
+        <script src="https://cdn.bootcss.com/waypoints/4.0.1/jquery.waypoints.min.js"></script>
 
         <!--首部导航栏-->
-        <nav class="ui inverted attached segment m-padded-tb-mini">
+        <nav id="navigation" class="ui inverted attached segment m-padded-tb-mini">
             <div class="ui container">
                 <div class="ui inverted stackable secondary menu">
                     <h2 class="ui inverted header item">圆环之理</h2>
@@ -41,11 +43,11 @@
         </nav>
 
         <!--内容-->
-        <div class=" m-padded-tb-large ">
+        <div class=" m-padded-tb-large " id="Content-Body-Begin">
             <div class="ui container"><!--适应窗口-->
                 <!--头部信息栏-->
                 <div class="ui center aligned top attached segment">
-                    <h2 class="ui  header">MySQL索引</h2>
+                    <h2 class="ui  header" id="blog-begin">MySQL索引</h2>
                     <div class="ui vertical link list">
                         <div class="item"><i class="calendar icon"></i>2020-1-15</div>
                         <div class="item"><i class="eye icon"></i>2333</div>
@@ -240,15 +242,31 @@ int main()
                     </div>
 
 
-                    <!--标签-->
+                    <!--标签---S-->
                     <div class="m-padded-tb-large m-padded-lr-responsive"><label class="ui basic tagA label">DB</label></div>
+                    <!--标签---E-->
 
-
-
+                    <!--右侧栏button---S-->
+                    <div style="display: none" id="toolbar" class="m-fixed m-mobile-hide m-right-bottom animate zoomIn">
+                        <ol>
+                            <ol>
+                                <div id="toTop-button" class="ui circular teal icon huge button">
+                                    <i class="arrow up icon"></i>
+                                </div>
+                            </ol>
+                            <br/>
+                            <ol >
+                                <div id="toComments-button" class="ui circular twitter icon huge button">
+                                    <i class="comment outline icon"></i>
+                                </div>
+                            </ol>
+                        </ol>
+                    </div>
+                    <!--侧栏button---E-->
                 </div>
 
 
-                <!--留言-->
+                <!--留言---S-->
                 <div id="comments-container" class="ui bottom attached segment">
 
                     <!--留言区域列表-->
@@ -341,24 +359,31 @@ int main()
 
                     </div>
                 </div>
+                <!--留言---E-->
             </div>
 
 
 
-<!--            &lt;!&ndash;侧栏button&ndash;&gt;-->
-<!--            <div class="ui vertical icon buttons">-->
 
-<!--                <button class="ui circular plus icon button">-->
-<!--                    <i class="plus icon"></i>-->
-<!--                </button>-->
+
+
+<!--            <div class="ui vertical icon buttons m-fixed m-right-bottom">-->
+
+<!--&lt;!&ndash;                <button class="ui circular plus icon button">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <i class="plus icon"></i>&ndash;&gt;-->
+<!--&lt;!&ndash;                </button>&ndash;&gt;-->
 
 <!--                <a href="#comments-container" class="ui circular button" >-->
 <!--                    <i class="edit outline icon"></i>-->
 <!--                </a>-->
 
-<!--                <a href="#" class="ui circular button" >-->
-<!--                    <i class="edit arrow up icon"></i>-->
-<!--                </a>-->
+<!--&lt;!&ndash;                <a href="#" class="ui circular button" >&ndash;&gt;-->
+<!--&lt;!&ndash;                    <i class="edit arrow up icon"></i>&ndash;&gt;-->
+<!--&lt;!&ndash;                </a>&ndash;&gt;-->
+
+<!--                <div class="ui icon button" id="toTop-button">-->
+<!--                    <i class="rocket icon"></i>-->
+<!--                </div>-->
 <!--            </div>-->
 
             <br/>
@@ -431,6 +456,28 @@ int main()
                 // For headings inside relative or absolute positioned containers within content.
                 hasInnerContainers: true,
             });
+
+            $(function () {
+                $('#toTop-button').click(function () {
+                    $(window).scrollTo('#Content-Body-Begin'||0,500);
+                });
+
+                $('#toComments-button').click(function () {
+                    $(window).scrollTo('#comments-container'||0,500);
+                });
+            })
+
+            var waypoint = new Waypoint({
+                element: document.getElementById('blog-begin'),
+                handler: function(direction) {
+                    if(direction == 'up'){
+                        $('#toolbar').hide(200);
+                    } else {
+                        $('#toolbar').show(200);
+                    }
+                }
+            })
+
         </script>
     </body>
 </html>
